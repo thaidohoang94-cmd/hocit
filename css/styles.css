@@ -1,0 +1,420 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+  background: #f5f7f9;
+}
+
+.trang {
+  max-width: 940px;
+  margin: 24px auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.dau-trang {
+  padding: 24px 32px;
+  background: #0e2452;
+  color: white;
+  font-size: 0;
+}
+
+.khoi-anh {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+}
+
+.khoi-anh img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.trang-thai {
+  position: absolute;
+  left: 84px;
+  bottom: 5px;
+  width: 17px;
+  height: 17px;
+  background: #12b76a;
+  border: 2px solid #0e2452;
+  border-radius: 50%;
+}
+
+.khoi-ten {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 130px);
+  font-size: 14px;
+}
+
+.khoi-ten h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.khoi-ten p {
+  margin: 2px 0 10px;
+  color: #cbd5e1;
+}
+
+.lien-he {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+.lien-he li {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.lien-he li::before {
+  content: attr(data-nhan) ": ";
+  color: #93c5fd;
+}
+
+/* Phần thân CV */
+.than {
+  padding: 26px 32px 32px;
+  font-size: 0;
+}
+
+/* Cột bên trái */
+.cot-trai {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(34% - 20px);
+  margin-right: 28px;
+  font-size: 14px;
+  position: sticky;
+  top: 20px;
+}
+
+/* Cột bên phải */
+.cot-phai {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(66% - 20px);
+  font-size: 14px;
+}
+
+.tieu-de {
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #0e2452;
+}
+.ky-nang .ten span {float: right; }
+
+.thanh{
+    height: 7px;    
+    border-radius:999px;
+    background: #e5e7eb;
+    overflow: hidden;
+}
+.thanh .do{
+    height: 100%;
+    border-radius: 999px;
+    background: #2563eb;
+}
+
+/* Khoảng cách giữa các mục */
+.muc {
+  margin-bottom: 26px;
+}
+
+/* Thẻ ngoại ngữ và sở thích */
+.the-nho {
+  display: inline-block;
+  margin: 0 6px 8px 0;
+  padding: 4px 9px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* DANH SÁCH THỜI GIAN */
+.thoi-gian {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+/* Đường thẳng dọc màu xanh nhạt */
+.thoi-gian::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 30px;
+  width: 2px;
+  background: #dbeafe;
+}
+
+/* Từng mục trong danh sách */
+.thoi-gian li {
+  position: relative;
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+/* Chấm tròn xanh */
+.thoi-gian li::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Ngày tháng */
+.moc {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* Tên trường, khóa học, công việc */
+.thoi-gian h3 {
+  margin: 3px 0;
+  color: #0e2452;
+  font-size: 14px;
+}
+
+/* Mô tả */
+.thoi-gian p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.du-an {
+  position: relative;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.du-an h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #0e2452;
+}
+
+.du-an p {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.du-an ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.du-an li {
+  position: relative;
+  padding-left: 13px;
+  font-size: 13px;
+}
+
+.du-an li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+.du-an.moi::after {
+  content: "Mới";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 3px 9px;
+  background: #2563eb;
+  color: white;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* LOP PHU TOAN MAN HINH */
+.lop-phu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgba(15, 23, 42, 0.6);
+}
+
+/* HIEN HOP THOAI KHI BAM LIEN KET */
+.lop-phu:target {
+  display: block;
+}
+
+/* HOP THOAI MAU TRANG */
+.hop-thoai {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 440px;
+  max-width: calc(100% - 36px);
+  height: max-content;
+  padding: 22px 24px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* TIEU DE HOP THOAI */
+.hop-thoai h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: #0e2452;
+}
+
+/* DANH SACH CHUNG CHI */
+.hop-thoai ol {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+/* NUT DONG HOP THOAI */
+.dong-hop {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  color: #6b7280;
+  text-decoration: none;
+}
+
+/* CHÂN TRANG CV */
+.chan-trang {
+  padding: 16px 20px;
+  background: #f8fafc;
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* Liên kết GitHub */
+.chan-trang a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Tạo khoảng cách sau nhóm kỹ năng */
+.cot-trai > .ky-nang {
+  margin-bottom: 24px;
+}
+
+/* Liên kết trong phần chứng chỉ */
+.cot-phai a,
+.cot-phai a:visited {
+  color: #2563eb;
+}
+
+/* GIAO DIEN DIEN THOAI */
+@media screen and (max-width: 680px) {
+
+  /* Khung CV */
+  .trang {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* Phần đầu CV */
+  .dau-trang {
+    padding: 20px;
+  }
+
+  /* Ảnh đại diện */
+  .khoi-anh {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  /* Họ tên và liên hệ */
+  .khoi-ten {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .khoi-ten h1 {
+    font-size: 24px;
+  }
+
+  /* Các thông tin liên hệ xuống dòng */
+  .lien-he li {
+    display: block;
+    margin: 3px 0;
+  }
+
+  /* Phần thân CV */
+  .than {
+    padding: 20px;
+  }
+
+  /* Cột trái chiếm toàn bộ chiều rộng */
+  .cot-trai {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 28px;
+    position: static;
+    font-size: 14px;
+  }
+
+  /* Cột phải xuống dưới cột trái */
+  .cot-phai {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  /* Thanh kỹ năng không vượt khung */
+  .thanh {
+    width: 100%;
+  }
+
+  /* Các thẻ nhỏ */
+  .the-nho {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  /* Khung dự án */
+  .du-an {
+    width: 100%;
+  }
+
+}
